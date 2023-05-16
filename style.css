@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #C1B4A0;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #000000;
+    --quarternary-color: #59503D;
+    --font-set: "Bellefair", regular;
+    --second-font-set: "Semplicita Pro", regular;
+    --third-font-set: "Semplicita Pro", bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/background.png);
+    font-family: var(--font-set);
+}
+
+/*MOBILE VERSION*/
+/*Font styling*/
+h1{
+    font-size: 27px;
+    font-family: var(--font-set);
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+h2{
+    font-size: 11px;
+    font-family: var(--third-font-set);
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+p{
+    font-size: 11px;
+    line-height: 20px;
+}
+
+
+/*FOOTER*/
+footer{
+    padding: 50px 37px 80px 37px;
+    margin: 0;
+    background-color: #212121;
+    color: var(--secondary-color);
+    text-align: center;
+    
+}
+
+.footerlogo{
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer h3{
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+footer p{
+    font-family: var(--second-font-set);
+    font-size: 11px;
+    margin-bottom: 30px;
+
+}
+
+.footervisit{
+    padding-bottom: 50px;
+}
+
+.footer-service p:hover{ 
+    color: var(--primary-color);
+}
+
+footer a{
+    color: var(--secondary-color);
+    font-family: var(--second-font-set);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+footer a:hover{
+    color: var(--primary-color);
+}
+
+
+.footer-SoMe img{
+    width: 35px;
+    padding: 0;
+    padding-top: 50px;
+    
+}
+
+
+
+
+/*DESKTOP VERSION*/
+@media screen and (min-width: 1280px) {
+/*Font styling*/
+    h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 25px; 
+    }
+    
+
+
+/*FOOTER*/
+footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        padding: 50px 60px;
+
+      }
+      
+      .footerlogo {
+          width: 100px;
+        grid-column-start: 1;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        
+      }
+      
+      .footervisit {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      
+      .footer-service{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+
+      .footer-contact{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+
+      .footer-SoMe {
+        padding-left: 250px;
+        padding-top: 65px;
+        align-items: center;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      
+      .footer-SoMe img {
+        width: 40px;
+        padding: 0;
+      }
+
+
+      footer p{
+        text-align: left;
+      }
+
+}
