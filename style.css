@@ -96,6 +96,22 @@ nav{
     font-family: var(--font-set);
 }
 
+/*Hover effekt på burger menuen*/
+
+ul li::after{
+    content:'';
+    width: 0%;
+    height: 1px;
+    background: var(--secondary-color);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 60px;
+}
+
 /*Navigationbar slide*/
 
 .nav-links{
