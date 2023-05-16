@@ -254,7 +254,7 @@ footer a:hover{
     /*Navigationbar*/
 
     nav{
-        padding: 20px 60px;
+        padding: 24px 60px;
     }
 
     /*Ikon (burgermenu)*/
@@ -267,7 +267,7 @@ footer a:hover{
     .closeicon{
         width: 18px;
         height: 18px;
-        padding: 20px 60px;
+        padding: 24px 60px;
     }
     
     .menu p{
