@@ -3,7 +3,7 @@
     --secondary-color: #FFFFFF;
     --tertiary-color: #000000;
     --quarternary-color: #59503D;
-    --font-set: "Bellefair", regular;
+    --font-set: 'Bellefair', serif;
     --second-font-set: "Semplicita Pro", regular;
     --third-font-set: "Semplicita Pro", bold;
 }
@@ -39,6 +39,7 @@ h2{
 p{
     font-size: 11px;
     line-height: 20px;
+    font-family: var(--second-font-set);
 }
 
 
@@ -184,16 +185,14 @@ footer{
     margin-right: auto;
 }
 
-footer h3{
-    font-size: 20px;
+footer h1{
     padding-top: 40px;
+    font-size: 20px;
+    
 }
 
 footer p{
-    font-family: var(--second-font-set);
-    font-size: 11px;
     margin-bottom: 30px;
-
 }
 
 .footervisit{
@@ -208,7 +207,7 @@ footer a{
     color: var(--secondary-color);
     font-family: var(--second-font-set);
     text-decoration: none;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 footer a:hover{
@@ -341,6 +340,10 @@ footer a:hover{
 
         footer p{
             text-align: left;
+        }
+
+        footer a{
+            font-size: 14px;
         }
 
 }
