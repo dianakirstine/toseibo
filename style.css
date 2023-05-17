@@ -178,7 +178,7 @@
 /*KONTAKT*/
 
     .contact-form{
-        margin: 0px 37px;
+        margin: 100px 37px;
     }
     
         hr{
@@ -230,13 +230,11 @@
       right: 0;
       margin-top: -30px;
       cursor: text;
-  
       animation: rise 2.5s;
     }
   
     button{
       padding: 10px 0;
-      margin-bottom: 85px;
       outline: none;
       background: transparent;
       border: 1px solid #000;
