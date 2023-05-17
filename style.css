@@ -22,7 +22,6 @@
 /*MOBILE VERSION*/
 
 /*Font styling*/
-
     h1{
         font-size: 27px;
         font-family: var(--font-set);
@@ -41,9 +40,23 @@
     p{
         font-size: 11px;
         line-height: 20px;
+        text-align: justify;
         font-family: var(--second-font-set);
     }
 
+/*Button styling*/
+    button{
+        padding: 10px 0;
+        outline: none;
+        background-color: var(--primary-color);
+        text-decoration: none;
+        border: 1px solid #000;
+        width: 50%;
+        cursor: pointer;
+        font-family: var(--second-font-set);
+        transition-duration: 0.4s;
+    }
+  
 
 /*NAVIGATIONSBAR*/
 
@@ -80,7 +93,6 @@
     }
 
 /*Links i navigationbar*/
-
     .nav-links ul{
         display: block;
         padding: 0;
@@ -101,7 +113,6 @@
     }
 
 /*Hover effekt på burger menuen*/
-
     ul li::after{
         content:'';
         width: 0%;
@@ -117,7 +128,6 @@
     }
 
 /*Navigationbar slide*/
-
     .nav-links{
         background-color: #59503D;
         position: absolute;
@@ -135,7 +145,6 @@
     }
 
 /*Ikon (burgermenu)*/
-
     .menuicon{
         display: block;
         width: 20px;
@@ -167,7 +176,6 @@
     }
 
 /*Ikon (shopping bag)*/
-
     .shopping_bag{
         width: 22px;
         height: 22px;
@@ -192,7 +200,6 @@
 
 /*Styling af tekst og logo*/
 /*Der er tilføjet en css animation. Kilde: https://www.w3schools.com/css/css3_animations.asp*/
-
     .video_content{
         text-align: center;
         justify-content: center;
@@ -227,7 +234,6 @@
 
 /*Ikon (close)*/
 /*Der er tilføjet en css animation. Kilde: https://www.w3schools.com/css/css3_animations.asp*/
-
     .closeicon_landing_page{
         display: flex;
         width: 16px;
@@ -268,13 +274,10 @@
         width: 90%;
         max-width: 300px;
         margin-top: 50px;
-        display: block;
-        align: center;
-        justify-content: center;
+    
         }
   
 /*Kontaktformularens tekst styling*/
-
     .input-group{
       margin-bottom: 30px;
       font-size: 11px;
@@ -304,16 +307,6 @@
       margin-top: -30px;
       cursor: text;
       animation: rise 2.5s;
-    }
-  
-    button{
-      padding: 10px 0;
-      outline: none;
-      background: transparent;
-      border: 1px solid #000;
-      width: 50%;
-      cursor: pointer;
-      font-family: var(--second-font-set);
     }
 
 
@@ -376,6 +369,7 @@
 /*DESKTOP VERSION*/
 
 @media screen and (min-width: 1280px) {
+
 /*Font styling*/
 
     h1{
@@ -396,14 +390,13 @@
 
 /*NAVIGATIONSBAR*/
     
-    /*Logo*/
+/*Logo*/
 
     .logo{
         width: 150px;
     }
 
-    /*Ikon (burgermenu)*/
-
+/*Ikon (burgermenu)*/
     .menuicon{
         width: 22px;
         height: 22px;
@@ -424,8 +417,7 @@
     }
 
     
-    /*Ikon (shopping bag)*/
-    
+/*Ikon (shopping bag)*/
     .shopping_bag{
         width: 28px; 
         height: 28px;  
@@ -446,6 +438,51 @@
     }
 
 
+
+/*CONTACT PAGE*/
+
+/*Styling af linje og tekster*/
+
+hr{
+    margin: 0px 500px 20px 0px;
+  }
+
+  .contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px 90px;
+   
+  }
+
+  .contact-text{
+    text-align: justify;
+    margin-top: -100px;
+  }
+
+  .contact-text p{
+    margin-right: 250px;
+  }
+
+/*Styling  af kontaktformular*/
+
+  form{
+    width: 70%;
+    max-width: 600px;
+    padding-right: 50px;
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .row .input-group{
+    flex-basis: 45%;
+  }
+
+
 /*FOOTER*/
 
     footer {
@@ -464,7 +501,6 @@
         grid-column-end: span 4;
         grid-row-start: 1;
         grid-row-end: 1;
-            
     }
         
     .footervisit {
