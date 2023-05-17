@@ -46,11 +46,12 @@
 
 
 /*NAVIGATIONSBAR*/
+
 /*Logo */
 
-    nav img{
+    .logo{
         width: 100px;
-        padding: 0px 10px 0px 0px;
+        padding: 15px 10px 0px 0px;
     }
 
 /*Navigationbar*/
@@ -58,12 +59,13 @@
 
     nav{
         display: flex;
-        padding: 20px 37px;
         justify-content: space-between;
-        transform: translateY(-100vh);
         background-image: url(img/background.png);
         background-size: cover;
-        position: sticky;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
         animation: fall 2.5s forwards;
     }
 
@@ -79,95 +81,98 @@
 
 /*Links i navigationbar*/
 
-.nav-links ul{
-    display: block;
-    padding: 0;
-}
+    .nav-links ul{
+        display: block;
+        padding: 0;
+    }
 
-.nav-links ul li{
-    display: block;
-    list-style: none;
-    text-decoration: none;
-    padding: 25px 0px;
-}
+    .nav-links ul li{
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        padding: 25px 0px;
+    }
 
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 27px;
-    font-family: var(--font-set);
-}
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 27px;
+        font-family: var(--font-set);
+    }
 
 /*Hover effekt på burger menuen*/
 
-ul li::after{
-    content:'';
-    width: 0%;
-    height: 1px;
-    background: var(--secondary-color);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
+    ul li::after{
+        content:'';
+        width: 0%;
+        height: 1px;
+        background: var(--secondary-color);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
 
-ul li:hover::after{
-    width: 60px;
-}
+    ul li:hover::after{
+        width: 60px;
+    }
 
 /*Navigationbar slide*/
 
-.nav-links{
-    position: fixed;
-    background-color: #59503D;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    right: -100%;
-    text-align: center;
-    transition: 0.5s;
-}
+    .nav-links{
+        background-color: #59503D;
+        position: absolute;
+        min-height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
 
-@media screen {
-    html, body {overflow-x: hidden;}
-}
+    @media screen {
+        html, body {overflow-x: hidden;}
+    }
 
 /*Ikon (burgermenu)*/
 
-.menuicon{
-    display: block;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
+    .menuicon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
 
-.closeicon{
-    display: block;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    padding: 24px 36px;
-}
+    .closeicon{
+        display: block;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 24px 36px;
+    }
 
-.menu{
-    display: flex;
-    color: #000;
-    cursor: pointer;
-}
+    .menu{
+        display: flex;
+        color: #000;
+        cursor: pointer;
+        padding: 20px 0px 20px 37px;
+    }
 
-.menu p{
-    font-size: 14px;
-    color: #000;
-    padding: 0px 5px 0px 0px;
-    font-family: "bellefair";
-    margin: 0;
-}
+    .menu p{
+        font-size: 14px;
+        color: #000;
+        padding: 0px 5px 0px 0px;
+        font-family: "bellefair";
+        margin: 0;
+    }
 
 /*Ikon (shopping bag)*/
 
-.shopping_bag{
-    width: 22px;
-    height: 22px;  
-}
+    .shopping_bag{
+        width: 22px;
+        height: 22px;
+        padding: 20px 37px 20px 0px; 
+    }
 
 
 /*KONTAKT*/
@@ -242,6 +247,7 @@ ul li:hover::after{
 
 
 /*FOOTER*/
+
     footer{
         padding: 50px 37px 80px 37px;
         margin: 0;
@@ -318,19 +324,14 @@ ul li:hover::after{
     
 
 /*NAVIGATIONSBAR*/
-/*Logo*/
-
-    nav img{
+    
+    /*Logo*/
+    
+    .logo{
         width: 150px;
     }
 
-/*Navigationbar*/
-
-    nav{
-        padding: 24px 60px;
-    }
-
-/*Ikon (burgermenu)*/
+    /*Ikon (burgermenu)*/
 
     .menuicon{
         width: 22px;
@@ -340,18 +341,24 @@ ul li:hover::after{
     .closeicon{
         width: 18px;
         height: 18px;
-        padding: 24px 60px;
+        padding: 20px 0px 20px 60px;
     }
     
+    .menu{
+        padding: 20px 0px 20px 60px;
+    }
+
     .menu p{
         font-size: 20px;
     }
+
     
-/*Ikon (shopping bag)*/
+    /*Ikon (shopping bag)*/
     
     .shopping_bag{
         width: 28px; 
-        height: 28px;   
+        height: 28px;  
+        padding: 20px 60px 20px 0px; 
     }
 
 
