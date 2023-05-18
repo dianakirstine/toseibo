@@ -48,7 +48,7 @@
     button{
         padding: 10px 0;
         outline: none;
-        background-color: var(--primary-color);
+        background-color: transparent;
         text-decoration: none;
         border: 1px solid #000;
         width: 50%;
@@ -56,6 +56,12 @@
         font-family: var(--second-font-set);
         transition-duration: 0.4s;
     }
+
+/*Line styling*/
+    hr{
+        border: 0.5px solid #000;
+        margin: 0px 160px 20px 0px;
+        }
   
 
 /*NAVIGATIONSBAR*/
@@ -254,17 +260,119 @@
     }
 
 
+/*FORSIDE*/
+/*Styling til første sektion: OPDAG TOSEIBOS FILOSOFI*/
+
+    .frontpage_1{
+        margin: 0;
+    }
+
+    .frontpage_video{
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        filter: brightness(0.90);
+        animation: fadein ease-in 1.5s forwards;
+    }
+
+    .frontpage_1_content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        color: var(--secondary-color);
+    }
+
+    .frontpage_1_content hr{
+        width: 35%;
+        border: 0.5px solid var(--secondary-color);
+    }
+
+/*Styling til anden sektion: NATUREN MØDER KUNSTEN*/
+
+    .frontpage_2{
+        margin: 50px 37px;
+    }
+
+    .frontpage_2_img1{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        filter: brightness(0.80);
+    }
+
+    .frontpage_2_img2{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        filter: brightness(0.80);
+    }
+
+    .frontpage_2_content hr{
+        width: 40%;
+    }
+
+/*Styling til trejde sektion: UDFORSK HÅNDLAVET KERAMIK*/
+
+    .frontpage_3{
+        margin: 100px 37px;
+    }
+
+    .frontpage_3_product1{
+        width: 100%;
+        height: 45vh;
+        background-image: url(img/frontpage_tekande.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 10px;
+    }
+
+    .frontpage_3_product2{
+        width: 100%;
+        height: 45vh;
+        background-image: url(img/frontpage_tallerkner.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 10px;
+    }
+
+    .frontpage_3_product3{
+        width: 100%;
+        height: 45vh;
+        background-image: url(img/frontpage_kopper.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 10px;
+    }
+
+    .frontpage_3_product4{
+        width: 100%;
+        height: 45vh;
+        background-image: url(img/frontpage_vaser.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 10px;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-set);
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        color: var(--secondary-color);
+        text-underline-offset: 8px;
+    }
+
+
 /*KONTAKT*/
 
     .contact-form{
         margin: 100px 37px;
     }
-    
-        hr{
-        border: 0.5px solid #000;
-        margin: 0px 160px 20px 0px;
-    
-        }
     
         .contact-text{
         text-align: justify;
@@ -438,49 +546,158 @@
     }
 
 
+/*FORSIDE*/
+/*Styling til første sektion: Opdag Toseibos Filosofi*/
+    .frontpage_1{
+        margin: 40px 60px;
+    }
+    
+    .frontpage_video{
+        right: 0;
+        width: 100%;
+    }
+    
+    .frontpage_1_content{
+        position: absolute;
+        left: 25%;
+        top: 60%;
+        width: 30%;
+    }
+    
+    .frontpage_1_content hr{
+        width: 35%;
+    }
+    
+/*Styling til anden sektion: Naturen møder kunsten*/
+
+    .frontpage_2{
+        margin: 100px 160px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr) ;
+        gap: 20px;
+    }
+
+    .frontpage_2_img1{
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .frontpage_2_img2{
+        height: 40vh;
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .frontpage_2_content{
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+/*Styling til anden tredje sektion: Udforsk håndlavet keramik*/
+
+    .frontpage_3{
+        margin: 150px 160px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .frontpage_3_content{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .frontpage_3_product1{
+        margin: 0;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .frontpage_3_product2{
+        margin: 0;
+        height: 25vh;
+        object-fit: contain;
+        grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .frontpage_3_product3{
+        margin: 0;
+        height: 25vh;
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .frontpage_3_product4{
+        margin: 0;
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .frontpage_3 hr{
+        width: 50%;
+    }
+
 
 /*CONTACT PAGE*/
 
 /*Styling af linje og tekster*/
 
-hr{
-    margin: 0px 500px 20px 0px;
-  }
+    hr{
+        margin: 0px 500px 20px 0px;
+    }
 
-  .contact-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 90px 90px;
-   
-  }
+    .contact-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 90px 90px;
+    
+    }
 
-  .contact-text{
-    text-align: justify;
-    margin-top: -100px;
-  }
+    .contact-text{
+        text-align: justify;
+        margin-top: -100px;
+    }
 
-  .contact-text p{
-    margin-right: 250px;
-  }
+    .contact-text p{
+        margin-right: 250px;
+    }
 
 /*Styling  af kontaktformular*/
 
-  form{
-    width: 70%;
-    max-width: 600px;
-    padding-right: 50px;
-  }
+    form{
+        width: 70%;
+        max-width: 600px;
+        padding-right: 50px;
+    }
 
-  .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-  .row .input-group{
-    flex-basis: 45%;
-  }
+    .row .input-group{
+        flex-basis: 45%;
+    }
 
 
 /*FOOTER*/
