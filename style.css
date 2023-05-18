@@ -368,6 +368,66 @@
     }
 
 
+/*OM*/
+/*Styling af første sektion: Bag Toseibo*/
+
+    .about_1{
+        margin: 100px 37px;
+    }
+
+    .about_1_img1{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about_1_img2{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+
+    .about_1 hr{
+        width: 25vh;
+    }
+
+/*Styling af anden sektion: Historie og filosofi*/
+
+    .about_2{
+        margin: 50px 37px;
+    }
+
+    .about_2_img1{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .about_2 hr{
+        width: 45vh;
+    }
+
+/*Styling af tredje sektion: Fra den jordnære ler til de rige glasurer*/
+
+    .about_3{
+        margin: 100px 37px;
+    }
+
+    .about_3_img1{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about_3_img2{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about_3 hr{
+        width: 20vh;
+    }
+
+
 /*KONTAKT*/
 
     .contact-form{
@@ -653,6 +713,118 @@
 
     .frontpage_3 hr{
         width: 50%;
+    }
+
+/*OM*/
+/*Styling af første sektion: Bag Toseibo*/
+
+    .about_1{
+        margin: 40px 160px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .about_1_content{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .about_1_img1{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: 100%;
+    }
+
+    .about_1_img2{
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0px;
+        height: 40vh;
+    }
+
+    .about_1_text{
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+/*Styling af anden sektion: Historie og filosofi*/
+
+    .about_2{
+        margin: 150px 160px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .about_2_img1{
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 50vh;
+    }
+    
+    .about_2_content{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .about_2_text1{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .about_2_text2{
+        grid-column-start: 6;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        padding: 0px 0px 0px 20px;
+    }
+
+/*Styling af tredje sektion: Fra den jordnære ler til de rige glasurer*/
+
+    .about_3{
+        margin: 150px 160px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .about_3_img1{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 100vh;
+    }
+
+    .about_3_img2{
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .about_3_content{
+        grid-column-start: 7;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
 
