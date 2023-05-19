@@ -481,62 +481,61 @@
 /*PRODUCTS*/ 
 
 /*Styling: first section*/
-    .products_ceramic{
-        margin: 100px 37px;
-    }
+.products_ceramic{
+    margin: 100px 37px;
+  }
 
-    .products_ceramic img{
-        width: 100%;
-        height: 40vh;
-        object-fit: cover;
-    }
+  .products_ceramic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .product_text{
-        width: 20%;
-        color: var(--secondary-color);
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
+  .product_text{
+    width: 20%;
+    color: var(--secondary-color);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
 
-    .product_text h1{
-        font-size: 11px;
-        line-height: 20px;
-    }
+  .product_text h1{
+    font-size: 11px;
+    line-height: 20px;
+  }
 
-    .product_text hr{
-        width: 80%;
-        border: 0.5px solid #fff;
-        text-align: center;
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
+  .product_text hr{
+    width: 80%;
+    border: 0.5px solid #fff;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
 
-    .intro_text p{
-        margin-bottom: 60px;
-    }    
+  .intro_text p{
+    margin-bottom: 60px;
+  }
 
 /*Styling af tekster: placerer dem ovenpå billedet*/
-    .dragon_1{
-        position: relative;
-    }
+  .dragon_1{
+    position: relative;
+  }
 
-    .dragon_2{
-        position: relative;
-    }
+  .dragon_2{
+    position: relative;
+  }
 
-    .dragon_3{
-        position: relative;
-    }
+  .dragon_3{
+    position: relative;
+  }
 
-    .dragon_4{
-        position: relative;
-    }
-
+  .dragon_4{
+    position: relative;
+  }
 
 /*KERAMIK KURSER*/
 
@@ -1094,6 +1093,63 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 80px;
+    }
+
+
+/*PRODUCTS*/ 
+
+/*Styling: text section*/  
+    .products_ceramic{
+        margin: 60px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+    }
+
+    .intro_text{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+/*Styling grid: Masonry*/   
+    .dragon_1{
+        grid-column-start: 6;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+    }
+
+    .dragon_2{
+        grid-column-start: 10;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+    }
+
+    .dragon_3{
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .dragon_4{
+        grid-column-start: 8;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .intro_text hr{
+        width: 200px;
+    }
+
+    .product_text{
+        width: 35%;
     }
 
 
