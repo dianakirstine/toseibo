@@ -28,6 +28,7 @@
         text-transform: uppercase;
         line-height: 30px;
         font-weight: 400;
+        margin: 8px 0px;
     }
 
     h2{
@@ -60,7 +61,8 @@
 /*Line styling*/
     hr{
         border: 0.5px solid #000;
-        margin: 0px 160px 20px 0px;
+        margin: 1px;
+        margin-bottom: 30px;
         }
   
 
@@ -304,6 +306,7 @@
         height: 30vh;
         object-fit: cover;
         filter: brightness(0.80);
+        padding-top: 10px;
     }
 
     .frontpage_2_content hr{
@@ -315,53 +318,55 @@
         margin: 100px 37px;
     }
 
-    .frontpage_3_product1{
+    .frontpage_3_product_img{
+        object-fit: cover;
+        height: 100%;
         width: 100%;
-        height: 45vh;
-        background-image: url(img/frontpage_tekande.jpg);
-        background-position: center;
-        background-size: cover;
+    }
+
+    .frontpage_3_product_text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--secondary-color);
+        text-align: center;
+    }
+
+    .frontpage_3_product_text h1{
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .frontpage_3_product_text hr{
+        border: 0.5px solid var(--secondary-color);
+    }
+
+    .frontpage_3_product1{
+        position: relative;
         margin-top: 10px;
     }
 
     .frontpage_3_product2{
-        width: 100%;
-        height: 45vh;
-        background-image: url(img/frontpage_tallerkner.jpg);
-        background-position: center;
-        background-size: cover;
+        position: relative;
         margin-top: 10px;
     }
 
     .frontpage_3_product3{
-        width: 100%;
-        height: 45vh;
-        background-image: url(img/frontpage_kopper.jpg);
-        background-position: center;
-        background-size: cover;
+        position: relative;
         margin-top: 10px;
     }
 
     .frontpage_3_product4{
-        width: 100%;
-        height: 45vh;
-        background-image: url(img/frontpage_vaser.png);
-        background-position: center;
-        background-size: cover;
+        position: relative;
         margin-top: 10px;
     }
 
-    .links{
-        display: flex;
-        flex-direction: column;
-        font-family: var(--font-set);
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        top: 50%;
-        color: var(--secondary-color);
-        text-underline-offset: 8px;
+    .frontpage_3_content hr{
+        width: 35%;
     }
+
+
 
 
 /*OM*/
@@ -384,7 +389,7 @@
     }
 
     .about_1 hr{
-        width: 25vh;
+        width: 55%;
     }
 
 /*Styling af anden sektion: Historie og filosofi*/
@@ -399,7 +404,7 @@
     }
 
     .about_2 hr{
-        width: 45vh;
+        width: 100%;
     }
 
 /*Styling af tredje sektion: Fra den jordnære ler til de rige glasurer*/
@@ -415,10 +420,11 @@
     .about_3_img2{
         width: 100%;
         object-fit: cover;
+        padding-top: 10px;
     }
 
     .about_3 hr{
-        width: 20vh;
+        width: 45%;
     }
 
 
@@ -512,7 +518,7 @@
         border: 0.5px solid #fff;
         position: absolute;
         left: 25%;
-        top: 60%;
+        top: 57%;
         width: 50%;
     }
 
@@ -554,8 +560,6 @@
         position: absolute;
         width: 18px;
         margin-top: 10px;
-        margin-left: 4px;
-        border: 0.5px solid #000;
     }
 
     .workshop_3 p{
@@ -577,7 +581,10 @@
         width: 90%;
         max-width: 300px;
         margin-top: 50px;
-    
+    }
+
+    .contact-form hr{
+        width: 40%;
     }
   
 /*Kontaktformularens tekst styling*/
@@ -689,7 +696,13 @@
         font-size: 14px;
         line-height: 25px; 
     }
+
+/*Line styling*/
     
+    hr{
+        margin-bottom: 40px;
+    }
+
 
 /*NAVIGATIONSBAR*/
     
@@ -781,6 +794,7 @@
 
     .frontpage_2_img2{
         height: 40vh;
+        padding: 0;
         grid-column-start: 7;
         grid-column-end: 11;
         grid-row-start: 1;
@@ -819,8 +833,6 @@
 
     .frontpage_3_product2{
         margin: 0;
-        height: 25vh;
-        object-fit: contain;
         grid-column-start: 9;
         grid-column-end: 11;
         grid-row-start: 2;
@@ -829,7 +841,6 @@
 
     .frontpage_3_product3{
         margin: 0;
-        height: 25vh;
         grid-column-start: 5;
         grid-column-end: 7;
         grid-row-start: 3;
@@ -844,8 +855,13 @@
         grid-row-end: 5;
     }
 
-    .frontpage_3 hr{
-        width: 50%;
+    .frontpage_3_product_text h1{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .frontpage_3_content hr{
+        width: 55%;
     }
 
 
@@ -853,7 +869,7 @@
 
 /*Styling af første sektion: Bag Toseibo*/
     .about_1{
-        margin: 40px 160px;
+        margin: 70px 160px;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 20px;
@@ -888,6 +904,10 @@
         grid-column-end: 11;
         grid-row-start: 3;
         grid-row-end: 4;
+    }
+
+    .about_1 hr{
+        width: 80%;
     }
 
 /*Styling af anden sektion: Historie og filosofi*/
@@ -927,6 +947,10 @@
         grid-row-start: 4;
         grid-row-end: 6;
         padding: 0px 0px 0px 20px;
+    }
+
+    .about_2 hr{
+        width: 80%;
     }
 
 /*Styling af tredje sektion: Fra den jordnære ler til de rige glasurer*/
@@ -986,7 +1010,7 @@
         border: 0.5px solid #fff;
         position: absolute;
         left: 40%;
-        top: 70%;
+        top: 67%;
         width: 20%;
     }
 
@@ -1024,20 +1048,19 @@
         padding-top: -100px;
     }
 
+    .workshop_3 hr{
+        margin-top: 25px;
+    }
+
 
 /*CONTACT PAGE*/
 
 /*Styling af linje og tekster*/
-    hr{
-        margin: 0px 500px 20px 0px;
-    }
-
     .contact-form{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 90px 90px;
-    
+        margin: 90px 160px;
     }
 
     .contact-text{
@@ -1049,11 +1072,13 @@
         margin-right: 250px;
     }
 
+    .contact-form hr{
+        width: 23%;
+    }
+
 /*Styling  af kontaktformular*/
     form{
-        width: 70%;
         max-width: 600px;
-        padding-right: 50px;
     }
 
     .row{
@@ -1123,12 +1148,12 @@
             padding: 0;
     }
 
-        footer p{
-            text-align: left;
-    }
-
         footer a{
             font-size: 14px;
     }
+
+        footer p{
+            text-align: left;
+        }
 
 }
