@@ -1039,6 +1039,10 @@
         grid-row-end: 4;
     }
 
+    .workshop_2 hr{
+        width: 100%;
+    }
+
 /*Styling af tredje sektion: Praktisk info*/
     .workshop_3{
         grid-column-start: 7;
