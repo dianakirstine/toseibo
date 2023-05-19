@@ -428,6 +428,56 @@
     }
 
 
+/*SHOP*/
+
+    .wrapper{
+        margin: 100px 37px;
+    }
+
+    .shop_img{
+        object-fit: cover;
+        height: 80vh;
+        width: 100%;
+    }
+
+    .shop_content{
+        position: relative;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .shop_text{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+        width: 50%;
+        transform: translate(-20%, -10%);
+        color: var(--secondary-color);
+    }
+
+    .shop_text hr{
+        border: 0.5px solid var(--secondary-color);
+    }
+
+    .shop_content p{
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        width: 80%;
+        transform: translate(-50%, -80%);
+        color: var(--secondary-color);
+    }
+
+/*Styling af footeren til shop*/
+    .shop_footer{
+        padding: 50px 37px 80px 37px;
+        background-color: #212121;
+        color: var(--secondary-color);
+        text-align: center;
+        margin: 100px -37px -100px -37px;
+    }
+
+
 /*PRODUCTS*/ 
 
 /*Styling: first section*/
@@ -698,7 +748,6 @@
     }
 
 /*Line styling*/
-    
     hr{
         margin-bottom: 40px;
     }
@@ -981,6 +1030,70 @@
         grid-column-end: 11;
         grid-row-start: 2;
         grid-row-end: 3;
+    }
+
+
+/*SHOP*/
+
+    .shop_content{
+        position: relative;
+        width: 100%;
+        margin: 40px 0px 40px 60px;
+        flex-shrink: 0;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .shop_img{
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .shop_text{
+        left: 10%;
+        width: 15%;
+        transform: translate(-10%, -10%);
+        color: var(--secondary-color);
+    }
+
+    .shop_content p{
+        left: 10%;
+        transform: translate(-10%, -80%);
+        color: var(--secondary-color);
+        width: 20%;
+    }
+
+/*Styling af footer til SHOP*/
+    .shop_footer{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 130px 100px 80px 100px;
+        text-align: center;
+    }
+
+    .shop_footer .footerlogo{
+        display: none;
+    }
+
+    .shop_footer h1{
+        padding-top: 0px;
+    }
+
+    .shop_footer p{
+        text-align: center;
+    }
+
+    .shop_footer .footer-SoMe{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
     }
 
 
