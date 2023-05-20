@@ -46,16 +46,23 @@
     }
 
 /*Button styling*/
-    button{
-        padding: 10px 0;
-        outline: none;
+    .button{
+        display: block;
         background-color: transparent;
-        text-decoration: none;
         border: 1px solid #000;
-        width: 50%;
-        cursor: pointer;
+        padding: 8px 20px 8px 10px;
+        text-decoration: none;
         font-family: var(--second-font-set);
-        margin-top: 25px;
+        color: var(--tertiary-color);
+        font-size: 11px;
+        margin-top: 15px;
+        width: 50px;
+    }
+
+    .button:hover{
+        background-color: var(--quarternary-color);
+        border: 1px solid transparent;
+        color: var(--secondary-color);
     }
 
 /*Line styling*/
@@ -290,6 +297,24 @@
     .frontpage_1_content hr{
         width: 35%;
         border: 0.5px solid var(--secondary-color);
+    }
+
+    .hero_button{
+        display: block;
+        background-color: transparent;
+        border: 1px solid #fff;
+        padding: 8px 20px 8px 10px;
+        text-decoration: none;
+        font-family: var(--second-font-set);
+        color: var(--secondary-color);
+        font-size: 11px;
+        margin-top: 15px;
+        width: 50px;
+    }
+    
+    .hero_button:hover{
+        background-color: var(--quarternary-color);
+        border: 1px solid transparent;
     }
 
 /*Styling til anden sektion: NATUREN MØDER KUNSTEN*/
@@ -752,6 +777,14 @@
         line-height: 25px; 
     }
 
+/*Button styling*/
+    .button{
+        padding: 10px 20px 10px 15px;
+        font-size: 14px;
+        margin-top: 25px;
+        width: 80px;
+    }
+
 /*Line styling*/
     hr{
         margin-bottom: 40px;
@@ -828,6 +861,13 @@
     
     .frontpage_1_content hr{
         width: 35%;
+    }
+
+    .hero_button{
+        padding: 10px 20px 10px 15px;
+        font-size: 14px;
+        margin-top: 25px;
+        width: 80px;
     }
     
 /*Styling til anden sektion: Naturen møder kunsten*/
