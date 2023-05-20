@@ -217,7 +217,10 @@
         left: 60%;
         transform: translate(-60%, -50%);
         animation: fadein ease-in 2s forwards;
+    }
 
+    .video_content p{
+        text-align: center;
     }
 
     @keyframes fadein{
@@ -298,14 +301,12 @@
         width: 100%;
         height: 60vh;
         object-fit: cover;
-        filter: brightness(0.80);
     }
 
     .frontpage_2_img2{
         width: 100%;
         height: 30vh;
         object-fit: cover;
-        filter: brightness(0.80);
         padding-top: 10px;
     }
 
@@ -336,10 +337,12 @@
     .frontpage_3_product_text h1{
         font-size: 11px;
         line-height: 20px;
+        margin: 2px;
     }
 
     .frontpage_3_product_text hr{
         border: 0.5px solid var(--secondary-color);
+        margin: 0;
     }
 
     .frontpage_3_product1{
@@ -492,7 +495,7 @@
   }
 
   .product_text{
-    width: 20%;
+    width: 40%;
     color: var(--secondary-color);
     text-align: center;
     position: absolute;
@@ -518,6 +521,10 @@
 
   .intro_text p{
     margin-bottom: 60px;
+  }
+
+  .intro_text hr{
+    width: 45%;
   }
 
 /*Styling af tekster: placerer dem ovenpå billedet*/
@@ -581,7 +588,6 @@
         width: 100%;
         height: 50vh;
         object-fit: cover;
-        filter: brightness(0.80);
         padding-bottom: 15px;
     }
 
@@ -1145,7 +1151,7 @@
     }
 
     .intro_text hr{
-        width: 200px;
+        width: 180px;
     }
 
     .product_text{
