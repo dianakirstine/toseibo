@@ -571,6 +571,195 @@
         position: relative;
     }
 
+
+/*DRAGON SCALE TEAPOT*/  
+
+/*Styling first section - KILDE: https://www.youtube.com/watch?v=McPdzhLRzCg*/
+    .teapot_1{
+        margin: 100px 37px;
+    }
+
+    .teapot_container{
+        margin-top: 100px;
+    }
+
+/*Styling: CAROUSEL*/
+    .slider_wrapper{
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider{
+        display: flex;
+        aspect-ratio: 5 / 6;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        border: 1px solid #000;  
+    }
+
+    .slider img{
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+/*CAROUSEL NAV BUTTONS*/
+    .slider_nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider_nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        background-color: var(--tertiary-color);
+        opacity: 0.50;
+        transition: opacity ease 250ms;
+    }
+
+    .slider_nav a:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+/*Styling: add to cart*/
+    .shopping_container button{
+            background-color: transparent;
+            border: 1px solid #000;
+            padding: 8px 20px 8px 20px;
+            margin-right: 90px;
+            text-decoration: none;
+            font-family: var(--second-font-set);
+            color: var(--tertiary-color);
+        }
+
+        #add_btn:hover{
+            background-color: var(--quarternary-color);
+            border: 1px solid transparent;
+            color: var(--secondary-color);
+        }
+
+
+    .shopping_container{
+        padding-top: 20px;
+        transition: .2s opacity;
+    }
+
+    .counter_container{
+        display: flex;   
+        position: relative;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+
+    #counter{
+        border: 1px solid #000;
+        width: 2.5rem;
+        height: 2.7rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*FOURTH SECTION: info + more proucts*/
+/*Styling: practical info*/
+    .teapot_4{
+        margin-top: 80px;
+    }
+
+    .teapot_4 hr{
+        position: absolute;
+        width: 35px;
+        margin-top: 15px;
+    }
+
+    .teapot_4 h1{
+        position: relative;
+        overflow: hidden;
+        padding-left: 50px;
+        font-size: 11px;
+        font-family: var(--third-font-set);
+        font-weight: bold;
+    }
+
+  .more_products{
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .more_products img{
+        min-width: 100%;
+        object-fit: cover;
+        border: 1px solid #000;
+    }
+
+    .more_text h1{
+        position: relative;
+        overflow: hidden;
+        padding-left: 50px;
+        font-size: 11px;
+        font-family: var(--third-font-set);
+        font-weight: bold;
+    }
+
+    .more_text hr{
+        position: absolute;
+        width: 35px;
+        margin-top: 25px;
+    }
+
+/*Styling grid*/   
+    .more_text{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .more_img1{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .more_img2{
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .more_img3{
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .more_img4{
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+
     
 /*KERAMIK KURSER*/
 
@@ -1193,6 +1382,80 @@
         width: 35%;
     }
 
+
+/*DRAGON SCALE TEAPOT*/  
+
+/*INTRO TEXT*/
+    .teapot_1{
+        margin: 60px;
+        padding-bottom: 200px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 20px;
+    }
+
+    .teapot_1_text{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+/*PRODUCT CAROUSEL | KILDE: https://www.youtube.com/watch?v=McPdzhLRzCg*/
+    .teapot_container{
+        grid-column-start: 6;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 7;
+    }
+
+    .teapot_4{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .shopping_container{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .slider_nav{
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+
+/*MORE PRODUCTS*/
+    .shopping_container button{
+        padding: 8px 40px 8px 40px;
+        margin-right: 90px;
+    }
+
+    .more_text{
+        display: block;
+        position: relative;
+        bottom: 65px;
+        left: 130px;
+    }
+
+    .more_text h1{
+        width: 100%;
+    }
+
+    .more_products{
+        width: 130px;
+        height: 60%;
+        display: flex;
+        position: relative;
+        left: 470px;
+        top: 850px;
+    }
+        
 
 /*KERAMIK KURSER*/
 
