@@ -1688,6 +1688,75 @@
     }
 }
 
+
+@media screen and (min-width: 1440px) {
+/*FORSIDE*/
+
+/*Styling til anden sektion: Naturen møder kunsten*/
+    .frontpage_2_content hr{
+        width: 36%;
+    }
+
+/*Styling til trejde sektion: Udforsk håndlavet keramik*/
+    .frontpage_3_content hr{
+        width: 46%;
+    }
+
+
+/*OM*/
+
+/*Styling af første sektion: Bag Toseibo*/
+    .about_1 hr{
+        width: 69%;
+    }
+
+/*Styling af anden sektion: Historie og filosofi*/
+    .about_2 hr{
+        width: 68%;
+    }
+
+/*Styling af tredje sektion: Fra den jordnære ler til de rige glasurer*/
+    .about_3_content hr{
+        width: 85%;
+    }
+
+
+/*DRAGON SCALE TEAPOT*/  
+
+/*INTRO TEXT*/
+    .teapot_1_text hr{
+        width: 90%;
+    }
+
+    .shopping_container{
+        padding-top: 2%;
+    }
+
+
+/*MORE PRODUCTS*/
+    .more_img{
+        width: 128px;
+    }
+
+
+/*KERAMIK KURSER*/
+
+/*Styling af tredje sektion: Praktisk info*/
+    .workshop_2_content hr{
+        width: 64%;
+    }
+
+
+/*CONTACT PAGE*/
+
+/*Styling  af kontaktformular*/
+    .row .input-group{
+        flex-basis: 44.5%;
+    }
+}
+
+
+
 @media screen and (min-width: 1536px) {
 /*Font styling*/
     h1{
@@ -1710,6 +1779,9 @@
         padding: 12px 22px 12px 17px;
         font-size: 15px;
     }
+
+
+/*FORSIDE*/
 
 /*Styling til første sektion: Opdag Toseibos Filosofi*/
     .frontpage_1_content hr{
