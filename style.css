@@ -1,11 +1,21 @@
+@font-face {
+    font-family: semplicita_pro_reg;
+    src: url(./fonts/semplicitapro.otf);
+}
+
+@font-face {
+    font-family: semplicita_pro_bold;
+    src: url(./fonts/semplicitapro-bold.otf);
+}
+
 :root {
     --primary-color: #C1B4A0;
     --secondary-color: #FFFFFF;
     --tertiary-color: #000000;
     --quarternary-color: #59503D;
     --font-set: 'Bellefair', serif;
-    --second-font-set: "Semplicita Pro", regular;
-    --third-font-set: "Semplicita Pro", bold;
+    --second-font-set: "semplicita_pro_reg";
+    --third-font-set: "semplicita_pro_bold";
 }
 
     html{
