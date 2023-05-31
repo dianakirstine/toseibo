@@ -342,6 +342,7 @@
         height: 30vh;
         object-fit: cover;
         padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     .frontpage_2_content hr{
@@ -351,6 +352,10 @@
 /*Styling til trejde sektion: UDFORSK HÅNDLAVET KERAMIK*/
     .frontpage_3{
         margin: 100px 37px;
+    }
+
+    .frontpage_3_content{
+        padding-bottom: 10px;
     }
 
     .frontpage_3_product_img{
@@ -1094,6 +1099,7 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 4;
+        padding: 0;
     }
 
     .frontpage_3_product1{
